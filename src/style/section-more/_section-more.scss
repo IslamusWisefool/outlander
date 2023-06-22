@@ -1,0 +1,16 @@
+.more {
+  padding-block: 3rem;
+  text-align: center;
+
+  &__slider-item {
+    overflow: hidden;
+    & img {
+      width: 100%;
+      aspect-ratio: 1 /1;
+      object-fit: cover;
+    }
+  }
+}
+.slider {
+  margin-inline: 3rem;
+}

@@ -1,0 +1,38 @@
+.follow {
+  padding-block: 7rem;
+
+  background-image: url("../../img/followMe-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  color: var(--text-color-white);
+
+  text-align: center;
+
+  .line::after {
+    background-color: var(--text-color-white);
+  }
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--text-color-white);
+    border-radius: 50%;
+
+    svg {
+      fill: var(--btn-text-color-secondary);
+
+      &:hover {
+        fill: var(--btn-bg-color_hover);
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+:root[data-theme="light"] {
+  --bg-color: rgb(247, 247, 247);
+  --bg-color-secondary: #222a2f;
+  --bg-color-black: #000;
+  --bg-color-skin: #f2efe9;
+
+  --text-color-ptimary: #222a2f;
+  --text-color-secondary: #739169;
+  --text-color-white: #fff;
+
+  --input-color: rgb(218, 218, 218);
+
+  --a-color: #222a2f;
+  --a-color_hover: #739169;
+
+  --btn-text-color: #fff;
+  --btn-text-color-secondary: #222a2f;
+  --btn-bg-color-primary: #739169;
+  --btn-bg-color-secondary: #fff;
+  --btn-bg-color_hover: #b3b3b3;
+
+  //   --accent: #260b08;
+  --shadow: rgba(0, 0, 0, 0.52);
+}
+:root[data-theme="dark"] {
+  --bg-color: #121212;
+  --bg-color-secondary: #3b3b3b;
+
+  --text-color-ptimary: #b1b1b1;
+  --text-color-secondary: #102a43;
+  --text-color-white: #fff;
+
+  --a-color: #627d98;
+  --a-color_hover: #102a43;
+
+  --btn-text-color: #fff;
+  --btn-text-color-secondary: #222a2f;
+  --btn-bg-color-primary: #739169;
+  --btn-bg-color-secondary: #fff;
+  --btn-bg-color_hover: #b3b3b3;
+
+  //   --accent: #260b08;
+  --shadow: rgba(0, 0, 0, 0.52);
+}
+:root {
+  --box-shadow: 1px 10px 22px -20px var(--accent);
+}
+body {
+  overflow-x: hidden;
+}
+
+.hr {
+  display: block;
+  background-image: url("../img/hr.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: invert(100%);
+
+  height: 2.5rem;
+  width: 100%;
+}
+.line {
+  position: relative;
+  display: inline-block;
+  margin: 0.5rem 0;
+  width: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    left: 45%;
+    display: block;
+
+    background-color: var(--btn-bg-color-primary);
+    height: 2px;
+    width: 10%;
+  }
+
+  &-left {
+    &::after {
+      left: 0;
+    }
+  }
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.author {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+
+  .avatar {
+    width: 2rem;
+    height: 2rem;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+  }
+}
+
+@media (width < 992px) {
+  // Small screens
+}
+@media (width < 768px) {
+  // Mobile
+}

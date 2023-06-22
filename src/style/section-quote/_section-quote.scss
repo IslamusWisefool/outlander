@@ -1,0 +1,43 @@
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-block: 3rem;
+  background-color: var(--bg-color-skin);
+
+  &-wrapper {
+    position: relative;
+    margin-inline: 1rem;
+
+    p {
+      margin: 0;
+      font-size: var(--fs-1);
+      max-width: 50ch;
+      font-style: italic;
+
+      span {
+        display: block;
+        font-size: var(--fs-0);
+        font-weight: bolder;
+        margin-top: 1rem;
+        font-style: normal;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0.05rem;
+      inset: 0 0 0 -3%;
+      background-color: var(--text-color-secondary);
+      opacity: 0.5;
+    }
+  }
+}
+
+.quote-mark {
+  width: 5rem;
+  margin-block-end: 1rem;
+  aspect-ratio: 1 /1;
+}

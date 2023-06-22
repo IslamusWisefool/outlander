@@ -1,0 +1,17 @@
+@import "style/fonts";
+@import "style/basic-styles";
+@import "style/main";
+@import "./modules/btn/btn.scss";
+@import "./style/header.scss";
+@import "./style/section-hero/hero";
+@import "./style/section-about/section-about";
+@import "./style/section-results/section-results";
+@import "./style/section-stories/section-stories";
+@import "./style/section-more/section-more";
+@import "./modules/slider/itc-slider.css"; // Slider
+@import "./style/section-quote/section-quote";
+@import "./style/section-tips/section-tips";
+@import "./style/section-follow/section-follow";
+@import "./style/section-gallery/section-gallery";
+@import "./style/section-askme/section-askme";
+@import "./style/section-footer/section-footer";

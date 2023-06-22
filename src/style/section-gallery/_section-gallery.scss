@@ -1,0 +1,62 @@
+.gallery {
+  background-color: var(--bg-color-skin);
+
+  padding: 3rem;
+
+  text-align: center;
+
+  h2 {
+    margin-block: 2rem;
+    color: var(--text-color-secondary);
+  }
+
+  &__handler {
+    display: inline-flex;
+    justify-content: center;
+
+    margin-block: 2rem;
+    width: 100%;
+    gap: 2rem;
+
+    border-bottom: 1px solid var(--text-color-secondary);
+
+    &-tab {
+      cursor: pointer;
+      font-size: var(--fs-1);
+      color: var(--btn-bg-color_hover);
+      padding-block-end: 0.5em;
+
+      user-select: none;
+
+      &[data-active="true"] {
+        position: relative;
+        color: var(--text-color-primary);
+
+        span {
+          position: absolute;
+          inset: 98% -10px 0 -10px;
+
+          height: 3px;
+          background-color: var(--text-color-secondary);
+        }
+      }
+    }
+  }
+
+  &__body {
+    &-item {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      gap: 2rem;
+
+      &[data-active="false"] {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        aspect-ratio: 1 /1;
+      }
+    }
+  }
+}

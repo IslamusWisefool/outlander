@@ -1,0 +1,67 @@
+.stories {
+  padding: 2rem 0;
+  color: var(--text-color-white);
+
+  text-align: center;
+
+  background-image: url("../../img/background-stories.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(42vw, 1fr));
+    // grid-template-rows: 500px;
+    gap: 2rem;
+    margin: 2rem;
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background-image: linear-gradient(
+        transparent 10%,
+        #1a2c37 90%,
+        #1a2c37 100%
+      );
+      opacity: 0.7;
+      transition: opacity 300ms linear 0s;
+
+      cursor: pointer;
+    }
+
+    &:hover::after {
+      opacity: 0.9;
+    }
+
+    &-bg {
+      width: 100%;
+      aspect-ratio: 3 /4;
+      object-fit: cover;
+      object-position: bottom;
+    }
+
+    &-body {
+      text-align: left;
+
+      position: absolute;
+      left: 0;
+      bottom: 1.5rem;
+      z-index: 10;
+
+      padding-inline: 2rem;
+
+      cursor: pointer;
+
+      .time {
+        font-size: var(--fs-0);
+      }
+    }
+  }
+}

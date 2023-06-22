@@ -1,0 +1,23 @@
+.btn {
+  text-transform: uppercase;
+
+  padding: 1.5em;
+
+  letter-spacing: 0.15em;
+
+  transition: background-color 0.2s linear;
+
+  &-primary {
+    background-color: var(--btn-bg-color-primary);
+    color: var(--btn-text-color);
+  }
+  &-secondary {
+    background-color: var(--btn-bg-color-secondary);
+    color: var(--btn-text-color-secondary);
+
+    border: 1px solid var(--btn-bg-color_hover);
+  }
+  &:hover {
+    background-color: var(--btn-bg-color_hover);
+  }
+}

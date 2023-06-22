@@ -1,0 +1,50 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: left;
+
+    padding: min(3rem, 10vw);
+
+    &-btns {
+      width: 69%;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+    &-heading {
+      text-align: left;
+    }
+  }
+  &__pic {
+    flex: 1 1 50%;
+  }
+}
+.highlight {
+  color: var(--text-color-secondary);
+}
+
+@media (min-width: 992px) {
+  .hero {
+    flex-direction: row;
+    justify-content: center;
+    max-height: 85vh;
+    margin-bottom: 6rem;
+
+    &__content {
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+
+  .wrap-text {
+    display: block;
+  }
+}
